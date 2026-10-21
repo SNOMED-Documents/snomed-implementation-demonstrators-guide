@@ -4,3 +4,4 @@
 * [Terminology Binding Demonstrator](terminology-binding-demonstrator.md)
 * [ValueSet Utility](valueset-utility.md)
 * [Context Representation Transformations](context-representation-transformations.md)
+* [Allergy, Hypersensitivity and Intolerance Demonstrator](allergy-demonstrator.md)
