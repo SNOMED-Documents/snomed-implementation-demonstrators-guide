@@ -47,8 +47,11 @@ Click **New binding**. A Properties panel opens on the right, next to your form:
 * **Question text:** the display label the respondent sees.
 * **Question code:** search and select a SNOMED CT concept; this is the meaning bound to the question.
 * **Restrict to Observables:** narrows the concept search to observable entities, useful for lab-style questions.
+* **Answer:** Select the data entry control and the value set (response options) for the question
 * **Allow Repeating:** lets the respondent add multiple answers to this question.
 * **Note:** an internal comment, not shown to the respondent.
+
+<figure><img src=".gitbook/assets/image (2).png" alt="" width="317"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -84,6 +87,10 @@ Every answer type falls into one of two groups.
 For any coded answer type, you choose where its valid options come from:
 
 <table><thead><tr><th width="130.98577880859375"></th><th>ECL expression</th><th>Predefined value set</th></tr></thead><tbody><tr><td><strong>How it works</strong></td><td>Define the value set on the fly with an expression (e.g. descendants of a concept)</td><td>Point to a value set that already exists on the connected terminology server</td></tr><tr><td><strong>Strength</strong></td><td>Flexible - adjust the query any time without touching the server</td><td>Reuses a standardized, governed list, consistent across forms</td></tr><tr><td><strong>Best for</strong></td><td>Narrow, one-off, or highly specific answer sets</td><td>A question where a shared value set already exists</td></tr></tbody></table>
+
+|                                      |   |
+| ------------------------------------ | - |
+| ![](<.gitbook/assets/image (1).png>) |   |
 
 {% hint style="info" %}
 Not sure which to use? Reach for a predefined value set if one already exists for this question; use ECL when you need something more specific.
