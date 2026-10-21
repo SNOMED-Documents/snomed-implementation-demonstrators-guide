@@ -6,7 +6,7 @@ You select a situation, and the demonstrator:
 
 1. reads the concept's normal form,
 2. detects its context attributes (finding or procedure context, subject relationship and temporal context), and
-3. applies the transformation decision table from the Context Representation Implementation Guide to produce the matching FHIR R4 resource.
+3. applies the [transformation decision table](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide/6-technical-application) from the [Context Representation Implementation Guide](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide) to produce the matching FHIR R4 resource.
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/context](https://ihtsdo.github.io/sct-implementation-demonstrator/#/context)
 
@@ -25,7 +25,7 @@ The demonstrator is also listed under **Learning Demos** in the [SNOMED CT Imple
 The *Situation with explicit context* hierarchy adds context to clinical findings and procedures. For example, it can record that a disorder is absent, that a procedure is planned, or that a finding relates to a family member rather than the patient.
 
 {% hint style="warning" %}
-**Recommended practice:** record the clinical finding or procedure itself, using concepts from those hierarchies. Then represent the context with the information model, for example in FHIR elements such as `clinicalStatus`, `intent` or `status`. This is described in the Context Representation Implementation Guide.
+**Recommended practice:** record the clinical finding or procedure itself, using concepts from those hierarchies. Then represent the context with the information model, for example in FHIR elements such as `clinicalStatus`, `intent` or `status`. This is described in the [Context Representation Implementation Guide](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide).
 
 Situation concepts exist for only a limited set of combinations. Pre-coordinating every finding and procedure with every context would cause a combinatorial explosion of the terminology. The demonstrator is for cases where implementers do need to use situation concepts and want to know how to represent them in FHIR.
 {% endhint %}
@@ -49,7 +49,7 @@ Situation concepts exist for only a limited set of combinations. Pre-coordinatin
 | **3 FHIR representation** | The resulting FHIR R4 resource as JSON, with a link to the resource specification and buttons to download or copy it. |
 | **Transformation rules** | A structured encoding of the guide's transformation rules. The row that matched the selected situation is highlighted. |
 
-The links at the top of the page open the **Context Representation Implementation Guide** and the **Transformation decision table (§6.3)**.
+The links at the top of the page open the [**Context Representation Implementation Guide**](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide) and the [**Transformation decision table (§6.3)**](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide/6-technical-application).
 
 ## Using the demonstrator
 
@@ -189,7 +189,7 @@ The **Basis** column shows where each rule comes from:
 
 | Basis | Meaning |
 | --- | --- |
-| <mark style="color:green;">**Decision table**</mark> | Reproduces the decision table in §6.3.2 of the Context Representation Implementation Guide. |
+| <mark style="color:green;">**Decision table**</mark> | Reproduces the [decision table](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide/6-technical-application) in §6.3.2 of the Context Representation Implementation Guide. |
 | <mark style="color:orange;">**Comparison table**</mark> | Taken from the guide's broader FHIR and SWEC comparison, covering procedures and negative family history. |
 | **Extension** | Goes beyond the guide's published tables, for example planned procedures → ServiceRequest. |
 
@@ -208,6 +208,7 @@ The FHIR presets on **Comparison table** and **Extension** rows are an implement
 * [Context Representation Transformations demonstrator](https://ihtsdo.github.io/sct-implementation-demonstrator/#/context)
 * [SNOMED CT Implementation Demonstrators](https://implementation.snomed.org/showcase/demonstrators)
 * [Context Representation Implementation Guide](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide)
+* [Transformation decision table (§6.3)](https://docs.snomed.org/implementation-guides/context-representation-implementation-guide/6-technical-application)
 * [HL7 FHIR R4 Condition](https://hl7.org/fhir/R4/condition.html) and [HL7 FHIR R4 ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
 
 _SNOMED CT Implementation Demos - Context Representation Transformations_\
