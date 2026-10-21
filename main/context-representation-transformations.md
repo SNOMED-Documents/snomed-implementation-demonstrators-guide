@@ -10,6 +10,12 @@ You select a situation, and the demonstrator:
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/context](https://ihtsdo.github.io/sct-implementation-demonstrator/#/context)
 
+## Watch the 2-minute video
+
+{% file src=".gitbook/assets/context-demo-00-user-guide-video.mp4" %}
+A 2-minute walkthrough of the Context Representation Transformations demonstrator.
+{% endfile %}
+
 {% hint style="info" %}
 The demonstrator is also listed under **Learning Demos** in the [SNOMED CT Implementation Demonstrators](https://implementation.snomed.org/showcase/demonstrators).
 {% endhint %}

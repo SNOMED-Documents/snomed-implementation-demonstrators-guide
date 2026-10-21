@@ -4,6 +4,12 @@ The **ValueSet Utility** helps implementers bridge the gap between legacy or pro
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/valueset-translator](https://ihtsdo.github.io/sct-implementation-demonstrator/#/valueset-translator)
 
+## Watch the 2-minute video
+
+{% file src=".gitbook/assets/vsu-00-user-guide-video.mp4" %}
+A 2-minute walkthrough of the ValueSet Utility.
+{% endfile %}
+
 {% hint style="info" %}
 The ValueSet Utility is a **demonstrator**. Use it to explore and prototype. Review and validate any generated resources before you use them in production.
 {% endhint %}
