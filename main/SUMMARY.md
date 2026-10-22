@@ -5,3 +5,4 @@
 * [ValueSet Utility](valueset-utility.md)
 * [Context Representation Transformations](context-representation-transformations.md)
 * [Allergy, Hypersensitivity and Intolerance Demonstrator](allergy-demonstrator.md)
+* [Cancer Synoptic Reporting](cancer-synoptic-reporting.md)
