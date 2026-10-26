@@ -4,11 +4,11 @@ The **ValueSet Utility** helps implementers bridge the gap between legacy or pro
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/valueset-translator](https://ihtsdo.github.io/sct-implementation-demonstrator/#/valueset-translator)
 
-## Watch the 2-minute video
+## Watch the video
 
-{% file src=".gitbook/assets/vsu-00-user-guide-video.mp4" %}
-A 2-minute walkthrough of the ValueSet Utility.
-{% endfile %}
+{% embed url="https://www.youtube.com/watch?v=VDQBvcGQlf4" %}
+A short walkthrough of the Value Set utility.
+{% endembed %}
 
 {% hint style="info" %}
 The ValueSet Utility is a **demonstrator**. Use it to explore and prototype. Review and validate any generated resources before you use them in production.
@@ -16,19 +16,19 @@ The ValueSet Utility is a **demonstrator**. Use it to explore and prototype. Rev
 
 ## What you can do
 
-| Goal | Action in the tool | Output |
-| --- | --- | --- |
-| See your concepts in another edition or language | **Translate concepts** | On-screen preview, downloadable as Excel |
-| Re-term the SNOMED CT target column of a map | **Translate map target column** | Updated Snap2Snomed map (Excel) |
-| Check codes and display terms | **Validate codes & terms** | On-screen preview |
-| Wrap your concepts in a FHIR ValueSet | **ValueSet – as uploaded** | FHIR ValueSet (JSON) |
-| Build a ValueSet with translated display terms | **ValueSet – translated terms** | FHIR ValueSet (JSON) |
-| Bundle everything from a map | **FHIR Package** | `.tgz` package with CodeSystem, ValueSets and ConceptMap |
+| Goal                                             | Action in the tool              | Output                                                   |
+| ------------------------------------------------ | ------------------------------- | -------------------------------------------------------- |
+| See your concepts in another edition or language | **Translate concepts**          | On-screen preview, downloadable as Excel                 |
+| Re-term the SNOMED CT target column of a map     | **Translate map target column** | Updated Snap2Snomed map (Excel)                          |
+| Check codes and display terms                    | **Validate codes & terms**      | On-screen preview                                        |
+| Wrap your concepts in a FHIR ValueSet            | **ValueSet – as uploaded**      | FHIR ValueSet (JSON)                                     |
+| Build a ValueSet with translated display terms   | **ValueSet – translated terms** | FHIR ValueSet (JSON)                                     |
+| Bundle everything from a map                     | **FHIR Package**                | `.tgz` package with CodeSystem, ValueSets and ConceptMap |
 
 ## Before you start
 
 * **Find the tool.** Open the [SNOMED CT Implementation Demonstrators](https://implementation.snomed.org/showcase/demonstrators) page, filter on **Tool** or search for "ValueSet", and select **ValueSet Utility**.
-* **Check the edition.** The top bar shows the server and edition the tool works against, for example *International Edition, 20261001*. ECL queries, validation and the default terms all use this edition.
+* **Check the edition.** The top bar shows the server and edition the tool works against, for example _International Edition, 20261001_. ECL queries, validation and the default terms all use this edition.
 * **Prepare your content.** Use one of these:
   * a spreadsheet (Excel, CSV or TSV) or a text file with your codes and terms
   * a **Snap2Snomed** map export
@@ -53,13 +53,13 @@ Choose one of the two buttons on the **Input** card:
 * **Choose File (Excel/CSV/TSV/TXT/JSON)** uploads a spreadsheet, text file, Snap2Snomed map, FHIR ValueSet or RF2 file.
 * **Enter ECL Expression** runs an ECL query against the edition selected in the top bar and uses the results as your source content.
 
-The name of the loaded file appears below the buttons. If the tool recognises a **Snap2Snomed** map, it shows *"Snap2Snomed Map detected – Columns configured automatically"*.
+The name of the loaded file appears below the buttons. If the tool recognises a **Snap2Snomed** map, it shows _"Snap2Snomed Map detected – Columns configured automatically"_.
 {% endstep %}
 
 {% step %}
 ### Configure: check your data
 
-The **Preview** table shows the first rows of your content, for example *5 of 24 rows*. Select **Load more** to see more.
+The **Preview** table shows the first rows of your content, for example _5 of 24 rows_. Select **Load more** to see more.
 
 For a Snap2Snomed map, the preview includes the source code and display, the local term, the SNOMED CT target code and display, the relationship type, the no-map flag and the map status.
 
@@ -76,14 +76,14 @@ Check that the codes and terms sit in the expected columns before you continue. 
 Under **What would you like to do?**, pick a goal. Each card shows what it produces:
 
 * **Translate / re-term**
-  * **Translate concepts** (*Preview*) shows each concept's display term in the selected edition or language.
-  * **Translate map target column** (*Excel map*) re-terms the SNOMED CT target column and downloads the updated Snap2Snomed map.
+  * **Translate concepts** (_Preview_) shows each concept's display term in the selected edition or language.
+  * **Translate map target column** (_Excel map_) re-terms the SNOMED CT target column and downloads the updated Snap2Snomed map.
 * **Validate**
-  * **Validate codes & terms** (*Preview*) checks every code and display term against the selected edition on the server.
+  * **Validate codes & terms** (_Preview_) checks every code and display term against the selected edition on the server.
 * **Generate FHIR resources**
-  * **ValueSet – as uploaded** (*FHIR ValueSet*) wraps the uploaded concepts, unchanged, into a FHIR ValueSet.
-  * **ValueSet – translated terms** (*FHIR ValueSet*) expands the concepts and stores display terms from the selected edition or language.
-  * **FHIR Package** (*FHIR package*) bundles a CodeSystem, ValueSets and a ConceptMap from the map into a `.tgz` package.
+  * **ValueSet – as uploaded** (_FHIR ValueSet_) wraps the uploaded concepts, unchanged, into a FHIR ValueSet.
+  * **ValueSet – translated terms** (_FHIR ValueSet_) expands the concepts and stores display terms from the selected edition or language.
+  * **FHIR Package** (_FHIR package_) bundles a CodeSystem, ValueSets and a ConceptMap from the map into a `.tgz` package.
 
 <figure><img src=".gitbook/assets/vsu-04-actions.png" alt="Action cards grouped into Translate, Validate and Generate FHIR resources"><figcaption><p>Choose an action.</p></figcaption></figure>
 
@@ -99,12 +99,12 @@ Depending on the action, you then set one or both of the following.
 
 **ValueSet metadata**, for FHIR resource actions:
 
-| Field | What to enter |
-| --- | --- |
-| **Source System URI** \* | URI for the source (local) CodeSystem |
-| **ValueSet URI** \* | Base URI for the generated ValueSets |
-| **ValueSet Name** \* | A name for the ValueSet. It is also used in the file names. |
-| **Version** | Version of the resources (default `1.0.0`) |
+| Field                     | What to enter                                                                   |
+| ------------------------- | ------------------------------------------------------------------------------- |
+| **Source System URI** \*  | URI for the source (local) CodeSystem                                           |
+| **ValueSet URI** \*       | Base URI for the generated ValueSets                                            |
+| **ValueSet Name** \*      | A name for the ValueSet. It is also used in the file names.                     |
+| **Version**               | Version of the resources (default `1.0.0`)                                      |
 | **Map between ValueSets** | When ticked, the ConceptMap references ValueSet URIs instead of CodeSystem URIs |
 
 \* Required.
@@ -132,7 +132,7 @@ A downloaded ValueSet is a standard FHIR `ValueSet` resource. Its `compose.inclu
 
 ## FHIR package contents
 
-**FHIR Package** produces a `.tgz` file. Unpacked, it contains the following, with file names based on the ValueSet name you entered (here *ExampleSet*):
+**FHIR Package** produces a `.tgz` file. Unpacked, it contains the following, with file names based on the ValueSet name you entered (here _ExampleSet_):
 
 ```
 package/
@@ -151,7 +151,7 @@ package/
 1. Under **Input**, choose your Snap2Snomed map export. The tool detects it and configures the columns.
 2. Check the **Preview**.
 3. Under **Action**, select **Translate concepts**.
-4. Set **Output Language** to **Swedish Edition**. *Swedish clinical* is selected automatically.
+4. Set **Output Language** to **Swedish Edition**. _Swedish clinical_ is selected automatically.
 5. Select **Generate Translation Preview**. Each concept now shows its Swedish term next to the original.
 6. Select **Download as Excel** for a simple list. Or scroll up, choose **ValueSet – translated terms**, fill in the metadata and generate a FHIR ValueSet.
 
@@ -162,7 +162,7 @@ package/
 {% endhint %}
 
 * **Results look like the wrong edition?** Check the edition in the top bar before you run ECL queries or validation.
-* **Terms didn't change after translating?** Make sure the language context, for example *Swedish clinical*, has terms for your concepts. Concepts without a translation in that language may keep their original display.
+* **Terms didn't change after translating?** Make sure the language context, for example _Swedish clinical_, has terms for your concepts. Concepts without a translation in that language may keep their original display.
 * **Starting from scratch?** Use **Enter ECL Expression** to build the source list directly from SNOMED CT, for example all descendants of a concept.
 * **Use your own URIs.** Replace the example URIs (such as `http://example.org/fhir/...`) with ones that belong to your organisation before you publish any resources.
 

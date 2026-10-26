@@ -4,11 +4,11 @@ The **Allergy, Hypersensitivity and Intolerance Demonstrator** shows how to reco
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/allergies](https://ihtsdo.github.io/sct-implementation-demonstrator/#/allergies)
 
-## Watch the 2-minute video
+## Watch the video
 
-{% file src=".gitbook/assets/al-00-user-guide-video.mp4" %}
-A 2-minute walkthrough of the demonstrator: the two recording approaches, the substance-based and propensity-based models, the FHIR resource, the problem list and decision support.
-{% endfile %}
+{% embed url="https://www.youtube.com/watch?v=a5bIbDS2A0Q" %}
+A short walkthrough of the demonstrator: the two recording approaches, the substance-based and propensity-based models, the FHIR resource, the problem list and decision support.
+{% endembed %}
 
 {% hint style="info" %}
 This is a **demonstrator**. Use it to explore and compare recording approaches. It is not a clinical system. Review any FHIR resources it produces before you use them as a model for production.
@@ -16,13 +16,13 @@ This is a **demonstrator**. Use it to explore and compare recording approaches. 
 
 ## What you can do
 
-| Goal | Where in the tool | What you see |
-| --- | --- | --- |
-| Record an allergy in a dedicated allergy list | **Allergy List Approach (AllergyIntolerance FHIR resource)** tab | A live FHIR `AllergyIntolerance` resource |
-| Compare the substance-based and propensity-based models | **Propensity based model** switch | Which concept goes in the resource's `code` element |
-| See which SNOMED CT content each field allows | The **i** icon next to a field | The terminology binding as an ECL expression |
-| Record an allergy as a problem | **Problem List Approach (Condition FHIR resource)** tab | The problem list and the substances the patient is allergic to |
-| Work with a national edition or another language | The menu (☰) | Search results from the selected edition and language |
+| Goal                                                    | Where in the tool                                                | What you see                                                   |
+| ------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
+| Record an allergy in a dedicated allergy list           | **Allergy List Approach (AllergyIntolerance FHIR resource)** tab | A live FHIR `AllergyIntolerance` resource                      |
+| Compare the substance-based and propensity-based models | **Propensity based model** switch                                | Which concept goes in the resource's `code` element            |
+| See which SNOMED CT content each field allows           | The **i** icon next to a field                                   | The terminology binding as an ECL expression                   |
+| Record an allergy as a problem                          | **Problem List Approach (Condition FHIR resource)** tab          | The problem list and the substances the patient is allergic to |
+| Work with a national edition or another language        | The menu (☰)                                                     | Search results from the selected edition and language          |
 
 ## Before you start
 
@@ -45,10 +45,10 @@ An electronic health record can hold allergy information in two places. The demo
 
 On the **Allergy List Approach** tab, the **Propensity based model** switch sets which concept goes into the `code` element of the `AllergyIntolerance` resource:
 
-| Switch | Model | `code` holds | Example |
-| --- | --- | --- | --- |
-| Off | Substance-based | The causative **substance** | `13577000` \|Nut\| |
-| On | Propensity-based | The **disorder** (propensity to adverse reaction) | `91934008` \|Allergy to nut\| |
+| Switch | Model            | `code` holds                                      | Example                       |
+| ------ | ---------------- | ------------------------------------------------- | ----------------------------- |
+| Off    | Substance-based  | The causative **substance**                       | `13577000` \|Nut\|            |
+| On     | Propensity-based | The **disorder** (propensity to adverse reaction) | `91934008` \|Allergy to nut\| |
 
 In both models the substance is also recorded in `reaction.substance`. Choosing a model is one of the key decisions implementers need to make. The [Implementation Guide](https://docs.snomed.org/implementation-guides/allergy-implementation-guide) explains the options.
 
@@ -66,9 +66,9 @@ The search only offers the part of SNOMED CT that is relevant to the field. Sele
 
 The tool then fills in other fields from the concept's definition:
 
-* **Allergy Intolerance Type**, for example *Hypersensitivity disposition (finding)*
-* **Allergy/Intolerance substance or product**, for example *Nut*
-* **Substance Category**, for example *Food*
+* **Allergy Intolerance Type**, for example _Hypersensitivity disposition (finding)_
+* **Allergy/Intolerance substance or product**, for example _Nut_
+* **Substance Category**, for example _Food_
 {% endstep %}
 
 {% step %}
@@ -76,9 +76,9 @@ The tool then fills in other fields from the concept's definition:
 
 Complete the rest of the form as needed:
 
-* **Clinical Status**, for example *Active*
-* **Verification Status**, for example *Unconfirmed*
-* **Allergy Criticality**: *Low Risk*, *High Risk* or *Unable to Assess Risk*
+* **Clinical Status**, for example _Active_
+* **Verification Status**, for example _Unconfirmed_
+* **Allergy Criticality**: _Low Risk_, _High Risk_ or _Unable to Assess Risk_
 
 Select **Clear** to start again.
 {% endstep %}
@@ -102,8 +102,8 @@ Switch on **Propensity based model** and the `code` holds the disorder instead. 
 
 In the blue reaction section, enter:
 
-* **Reaction Manifestation**, for example *Eruption* (SNOMED CT 271807003)
-* **Reaction Severity**: *Mild*, *Moderate* or *Severe*
+* **Reaction Manifestation**, for example _Eruption_ (SNOMED CT 271807003)
+* **Reaction Severity**: _Mild_, _Moderate_ or _Severe_
 * **Exposure Route**, if known
 
 The reaction appears in the resource under `reaction.manifestation` and `reaction.severity`.
@@ -114,7 +114,7 @@ The reaction appears in the resource under `reaction.manifestation` and `reactio
 {% step %}
 ### Save
 
-Select **Save**. The allergy is added to the patient's problem list, and the tool confirms with *Problem list updated*.
+Select **Save**. The allergy is added to the patient's problem list, and the tool confirms with _Problem list updated_.
 {% endstep %}
 {% endstepper %}
 
@@ -126,11 +126,11 @@ Select **Save**. The allergy is added to the patient's problem list, and the too
 
 Under **Substances the patient is allergic to**, the tool derives the causative substance of each allergy from its SNOMED CT definition:
 
-| Problem | Derived substance |
-| --- | --- |
-| `91934008` \|Allergy to nut\| | `13577000` \|Nut\| |
+| Problem                              | Derived substance         |
+| ------------------------------------ | ------------------------- |
+| `91934008` \|Allergy to nut\|        | `13577000` \|Nut\|        |
 | `300913006` \|Allergy to shellfish\| | `735029006` \|Shellfish\| |
-| `293586001` \|Allergy to aspirin\| | `387458008` \|Aspirin\| |
+| `293586001` \|Allergy to aspirin\|   | `387458008` \|Aspirin\|   |
 
 <figure><img src=".gitbook/assets/al-07-problem-list.png" alt="Problem list with allergy to nut, shellfish and aspirin, and the derived substances Nut, Shellfish and Aspirin"><figcaption><p>The problem list and the substances derived from it.</p></figcaption></figure>
 
@@ -148,7 +148,7 @@ Open the menu (☰) at the top left. Under **Terminology settings** you can chan
 <figure><img src=".gitbook/assets/al-08-editions.png" alt="Menu with Terminology settings and the list of editions, including Argentinian, International and Swedish editions"><figcaption><p>Choose an edition and version.</p></figcaption></figure>
 
 {% hint style="info" %}
-The demonstrator's own screens are in English only. When you select another edition, the tool shows *This module is currently available in English only.*
+The demonstrator's own screens are in English only. When you select another edition, the tool shows _This module is currently available in English only._
 {% endhint %}
 
 ## Tips

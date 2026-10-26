@@ -6,11 +6,11 @@ The questionnaires are the result of a terminology alignment effort between SNOM
 
 **Try it here:** [https://ihtsdo.github.io/sct-implementation-demonstrator/#/cancer-reporting](https://ihtsdo.github.io/sct-implementation-demonstrator/#/cancer-reporting)
 
-## Watch the 3-minute video
+## Watch the video
 
-{% file src=".gitbook/assets/cs-00-user-guide-video.mp4" %}
-A 3-minute walkthrough of the demonstrator: the background to cancer synoptic reporting, finding the demonstrator, the questionnaire preview, the SNOMED CT bindings and the FHIR QuestionnaireResponse.
-{% endfile %}
+{% embed url="https://www.youtube.com/watch?v=pphV4gqM9NI" %}
+A short walkthrough of the demonstrator: the background to cancer synoptic reporting, finding the demonstrator, the questionnaire preview, the SNOMED CT bindings and the FHIR QuestionnaireResponse.
+{% endembed %}
 
 {% hint style="warning" %}
 All questionnaires in this demonstrator are **draft content**. They are intended for demonstration and evaluation purposes only and are not validated for clinical use.
@@ -24,13 +24,13 @@ Before 2020, SNOMED CT content for cancer synoptic reporting was limited. The SN
 
 ## What you can do
 
-| Goal | Where in the tool | What you see |
-| --- | --- | --- |
-| Choose a cancer type | The cards on the **Cancer Synoptic Reporting** page | One example form per cancer type |
-| Fill in a synoptic report | **Questionnaire Preview** tab | The FHIR Questionnaire rendered as an interactive form |
-| See the SNOMED CT concept behind each question and answer | **SNOMED Coding** tab | Every question and answer option with its SNOMED CT concept |
-| See the coded result | **Show response** at the bottom of the form | The FHIR `QuestionnaireResponse`, with each answer coded in SNOMED CT |
-| Reuse the result | The copy and download icons in the response | The response on the clipboard or as a JSON file |
+| Goal                                                      | Where in the tool                                   | What you see                                                          |
+| --------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------- |
+| Choose a cancer type                                      | The cards on the **Cancer Synoptic Reporting** page | One example form per cancer type                                      |
+| Fill in a synoptic report                                 | **Questionnaire Preview** tab                       | The FHIR Questionnaire rendered as an interactive form                |
+| See the SNOMED CT concept behind each question and answer | **SNOMED Coding** tab                               | Every question and answer option with its SNOMED CT concept           |
+| See the coded result                                      | **Show response** at the bottom of the form         | The FHIR `QuestionnaireResponse`, with each answer coded in SNOMED CT |
+| Reuse the result                                          | The copy and download icons in the response         | The response on the clipboard or as a JSON file                       |
 
 ## Before you start
 
@@ -65,7 +65,7 @@ Each card is tagged **Draft**, **FHIR R5** and **SNOMED CT**. Select **Preview**
 
 The **Questionnaire Preview** tab renders the FHIR Questionnaire as a form. In the colorectal cancers example, the questions include **Neoadjuvant therapy**, **Operative procedure**, **Tumor site**, **Tumor dimensions** and **Histological tumor type**, each with its own answer options. Required questions are marked with an asterisk (\*).
 
-Each label shows the ICCR data element name followed by the SNOMED CT term, for example *Operative procedure - Specimen collection procedure (observable entity)*.
+Each label shows the ICCR data element name followed by the SNOMED CT term, for example _Operative procedure - Specimen collection procedure (observable entity)_.
 
 <figure><img src=".gitbook/assets/cs-03-questionnaire-preview.png" alt="Colorectal Cancers questionnaire preview with the neoadjuvant therapy, operative procedure and tumor site questions and their answer options"><figcaption><p>The colorectal cancers questionnaire.</p></figcaption></figure>
 {% endstep %}
@@ -75,12 +75,12 @@ Each label shows the ICCR data element name followed by the SNOMED CT term, for 
 
 Open the **SNOMED Coding** tab. It lists every entry in the form, marked **Question** or **Answer**, with its SNOMED CT concept. The colorectal cancers form has 206 coded entries. For example:
 
-| Type | Label | SNOMED CT concept |
-| --- | --- | --- |
-| Question | Neoadjuvant therapy | `1279827005` \|Neoadjuvant antineoplastic therapy procedure prior to surgery (observable entity)\| |
-| Answer | Information not provided | `261665006` \|Unknown (qualifier value)\| |
-| Answer | Extended right hemicolectomy | `174071004` \|Extended right hemicolectomy (procedure)\| |
-| Answer | Caecum | `32713005` \|Cecum structure (body structure)\| |
+| Type     | Label                        | SNOMED CT concept                                                                                  |
+| -------- | ---------------------------- | -------------------------------------------------------------------------------------------------- |
+| Question | Neoadjuvant therapy          | `1279827005` \|Neoadjuvant antineoplastic therapy procedure prior to surgery (observable entity)\| |
+| Answer   | Information not provided     | `261665006` \|Unknown (qualifier value)\|                                                          |
+| Answer   | Extended right hemicolectomy | `174071004` \|Extended right hemicolectomy (procedure)\|                                           |
+| Answer   | Caecum                       | `32713005` \|Cecum structure (body structure)\|                                                    |
 
 Questions are mostly bound to **observable entity** concepts. Answers come from the qualifier value, procedure, body structure and morphologic abnormality hierarchies.
 

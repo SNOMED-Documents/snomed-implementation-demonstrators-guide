@@ -11,11 +11,11 @@ This guide explains how to find your way around the demonstrators site, and has 
 
 **Try it here:** [https://implementation.snomed.org/showcase/demonstrators](https://implementation.snomed.org/showcase/demonstrators)
 
-## Watch the 90-second video
+## Watch the introduction video
 
-{% file src=".gitbook/assets/demos-00-user-guide-video.mp4" %}
-A 90-second introduction to the demonstrators site: where to find it, how the catalogue is organised, filtering and searching, opening a demonstrator and changing the terminology settings.
-{% endfile %}
+{% embed url="https://www.youtube.com/watch?v=VDQBvcGQlf4" %}
+A short introduction to the demonstrators site: where to find it, how the catalogue is organised, filtering and searching, opening a demonstrator, and changing the terminology settings.
+{% endembed %}
 
 {% hint style="info" %}
 The demonstrators are for **learning, exploring and prototyping**. They are not clinical systems. Review anything they produce, such as FHIR resources or value sets, before you use it as a model for production.
@@ -38,13 +38,13 @@ The catalogue starts with two highlighted groups:
 
 Below them, every demonstrator is listed by type:
 
-| Type | What it is | Examples |
-| --- | --- | --- |
-| **Learning Demo** | Explains a SNOMED CT concept or technique | Terminology Bindings Sandbox, Context Representation Transformations, SNOMED Maps Demonstrator |
-| **Clinical Demo** | Shows SNOMED CT in a clinical recording scenario | Allergies, Cancer Synoptic Reporting, EHDS Patient Summary |
-| **Tool** | A utility you can use with your own content | ValueSet Utility, Extensions Search Utility, FHIR Resource Internationalizer |
-| **Analytics Demo** | Analyses and reports on SNOMED CT coded data | Descriptive Analytics, Analytics with Snolytical |
-| **Game** | Learn SNOMED CT while you play | Snoguess, Attribute Fall |
+| Type               | What it is                                       | Examples                                                                                       |
+| ------------------ | ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Learning Demo**  | Explains a SNOMED CT concept or technique        | Terminology Bindings Sandbox, Context Representation Transformations, SNOMED Maps Demonstrator |
+| **Clinical Demo**  | Shows SNOMED CT in a clinical recording scenario | Allergies, Cancer Synoptic Reporting, EHDS Patient Summary                                     |
+| **Tool**           | A utility you can use with your own content      | ValueSet Utility, Extensions Search Utility, FHIR Resource Internationalizer                   |
+| **Analytics Demo** | Analyses and reports on SNOMED CT coded data     | Descriptive Analytics, Analytics with Snolytical                                               |
+| **Game**           | Learn SNOMED CT while you play                   | Snoguess, Attribute Fall                                                                       |
 
 A card with the open-in-new-window icon (↗) opens a demonstrator that runs on its own site.
 
@@ -61,35 +61,35 @@ A card with the open-in-new-window icon (↗) opens a demonstrator that runs on 
 
 ## Open a demonstrator
 
-Select a card to open the demonstrator. The top bar shows the SNOMED CT edition in use, for example **International Edition**. Each demonstrator has its own page in this guide (see [Demonstrators in this guide](#demonstrators-in-this-guide)).
+Select a card to open the demonstrator. The top bar shows the SNOMED CT edition in use, for example **International Edition**. Each demonstrator has its own page in this guide (see [Demonstrators in this guide](./#demonstrators-in-this-guide)).
 
 ## Change the terminology settings
 
 The demonstrators look up SNOMED CT content on a FHIR terminology server. Select the menu (☰) at the top left to change:
 
-| Setting | What it does |
-| --- | --- |
-| **Select Demonstrator** | Switch to another demonstrator |
-| **FHIR Term Server** | The FHIR terminology server the demonstrators use, for example *Implementation Demo SnowstormX* |
-| **Edition** | The SNOMED CT edition and version, for example *International Edition* or a national edition |
-| **Terminology language** | The language of the SNOMED CT terms, for example *US English* |
-| **Site language** | The language of the demonstrators' own screens |
+| Setting                  | What it does                                                                                    |
+| ------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Select Demonstrator**  | Switch to another demonstrator                                                                  |
+| **FHIR Term Server**     | The FHIR terminology server the demonstrators use, for example _Implementation Demo SnowstormX_ |
+| **Edition**              | The SNOMED CT edition and version, for example _International Edition_ or a national edition    |
+| **Terminology language** | The language of the SNOMED CT terms, for example _US English_                                   |
+| **Site language**        | The language of the demonstrators' own screens                                                  |
 
 <figure><img src=".gitbook/assets/demos-05-settings.png" alt="The menu open, with Select Demonstrator, and the terminology settings FHIR Term Server, Edition and Terminology language"><figcaption><p>Change the server, edition and language from the menu.</p></figcaption></figure>
 
 {% hint style="info" %}
-Some demonstrators are only available in English. When you choose another edition or language, they show *This module is currently available in English only.*
+Some demonstrators are only available in English. When you choose another edition or language, they show _This module is currently available in English only._
 {% endhint %}
 
 ## Demonstrators in this guide
 
-| Demonstrator | Type | What it shows |
-| --- | --- | --- |
-| [Terminology Binding Demonstrator](terminology-binding-demonstrator.md) | Learning Demo | Build a form and bind each question and its answers to SNOMED CT |
-| [ValueSet Utility](valueset-utility.md) | Tool | Turn spreadsheets, code lists, Snap2Snomed maps and ECL results into FHIR ValueSets |
-| [Context Representation Transformations](context-representation-transformations.md) | Learning Demo | Transform a situation concept into its FHIR resource representation |
-| [Allergy, Hypersensitivity and Intolerance Demonstrator](allergy-demonstrator.md) | Clinical Demo | Record allergies with SNOMED CT and FHIR, as an allergy or a problem |
-| [Cancer Synoptic Reporting](cancer-synoptic-reporting.md) | Clinical Demo | FHIR Questionnaires with SNOMED CT bindings for cancer pathology reports |
+| Demonstrator                                                                        | Type          | What it shows                                                                       |
+| ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- |
+| [Terminology Binding Demonstrator](terminology-binding-demonstrator.md)             | Learning Demo | Build a form and bind each question and its answers to SNOMED CT                    |
+| [ValueSet Utility](valueset-utility.md)                                             | Tool          | Turn spreadsheets, code lists, Snap2Snomed maps and ECL results into FHIR ValueSets |
+| [Context Representation Transformations](context-representation-transformations.md) | Learning Demo | Transform a situation concept into its FHIR resource representation                 |
+| [Allergy, Hypersensitivity and Intolerance Demonstrator](allergy-demonstrator.md)   | Clinical Demo | Record allergies with SNOMED CT and FHIR, as an allergy or a problem                |
+| [Cancer Synoptic Reporting](cancer-synoptic-reporting.md)                           | Clinical Demo | FHIR Questionnaires with SNOMED CT bindings for cancer pathology reports            |
 
 ## Related resources
 
