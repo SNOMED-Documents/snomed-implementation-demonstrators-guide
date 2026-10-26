@@ -6,6 +6,8 @@ The **Allergy, Hypersensitivity and Intolerance Demonstrator** shows how to reco
 
 ## Watch the video
 
+{% embed url="https://www.youtube.com/embed/VDQBvcGQlf4" %}
+
 {% embed url="https://www.youtube.com/watch?v=a5bIbDS2A0Q" %}
 A short walkthrough of the demonstrator: the two recording approaches, the substance-based and propensity-based models, the FHIR resource, the problem list and decision support.
 {% endembed %}
