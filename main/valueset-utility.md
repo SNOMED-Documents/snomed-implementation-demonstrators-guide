@@ -6,7 +6,7 @@ The **ValueSet Utility** helps implementers bridge the gap between legacy or pro
 
 ## Watch the video
 
-{% embed url="https://www.youtube.com/watch?v=VDQBvcGQlf4" %}
+{% embed url="https://youtu.be/VDQBvcGQlf4" %}
 A short walkthrough of the Value Set utility.
 {% endembed %}
 

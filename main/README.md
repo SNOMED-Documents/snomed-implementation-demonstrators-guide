@@ -13,7 +13,7 @@ This guide explains how to find your way around the demonstrators site, and has 
 
 ## Watch the introduction video
 
-{% embed url="https://www.youtube.com/watch?v=VDQBvcGQlf4" %}
+{% embed url="https://youtu.be/JO2ji-pPYYM" %}
 A short introduction to the demonstrators site: where to find it, how the catalogue is organised, filtering and searching, opening a demonstrator, and changing the terminology settings.
 {% endembed %}
 

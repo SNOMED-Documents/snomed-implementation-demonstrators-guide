@@ -6,9 +6,7 @@ The **Allergy, Hypersensitivity and Intolerance Demonstrator** shows how to reco
 
 ## Watch the video
 
-{% embed url="https://www.youtube.com/embed/VDQBvcGQlf4" %}
-
-{% embed url="https://www.youtube.com/watch?v=a5bIbDS2A0Q" %}
+{% embed url="https://youtu.be/a5bIbDS2A0Q" %}
 A short walkthrough of the demonstrator: the two recording approaches, the substance-based and propensity-based models, the FHIR resource, the problem list and decision support.
 {% endembed %}
 
@@ -47,7 +45,7 @@ An electronic health record can hold allergy information in two places. The demo
 
 On the **Allergy List Approach** tab, the **Propensity based model** switch sets which concept goes into the `code` element of the `AllergyIntolerance` resource:
 
-| Switch | Model            | `code` holds                                      | Example                       |
+| Switch | Model            | code holds                                        | Example                       |
 | ------ | ---------------- | ------------------------------------------------- | ----------------------------- |
 | Off    | Substance-based  | The causative **substance**                       | `13577000` \|Nut\|            |
 | On     | Propensity-based | The **disorder** (propensity to adverse reaction) | `91934008` \|Allergy to nut\| |

@@ -8,7 +8,7 @@ The questionnaires are the result of a terminology alignment effort between SNOM
 
 ## Watch the video
 
-{% embed url="https://www.youtube.com/watch?v=pphV4gqM9NI" %}
+{% embed url="https://youtu.be/pphV4gqM9NI" %}
 A short walkthrough of the demonstrator: the background to cancer synoptic reporting, finding the demonstrator, the questionnaire preview, the SNOMED CT bindings and the FHIR QuestionnaireResponse.
 {% endembed %}
 

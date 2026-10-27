@@ -12,7 +12,7 @@ You select a situation, and the demonstrator:
 
 ## Watch the video
 
-{% embed url="https://www.youtube.com/watch?v=C9v1MxjQcOM" %}
+{% embed url="https://youtu.be/C9v1MxjQcOM" %}
 A short walkthrough of the Context Representation Transformations demonstrator.
 {% endembed %}
 
